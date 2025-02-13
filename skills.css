@@ -1,0 +1,161 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #c2f140 0%, #eb466b 100%);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+  
+
+main {
+    padding: 20px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill {
+    margin: 20px 0;
+}
+
+.skill h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-bar::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: #007BFF;
+    border-radius: 10px;
+    transition: width 1s ease-out;
+}
+
+#html-bar::after{
+    width: 80%; 
+}
+
+#css-bar::after {
+    width: 80%;
+}
+
+#js-bar::after {
+    width: 70%; 
+}
+
+#c-bar::after{
+    width: 80%;
+}
+#cpp-bar::after{
+    width:80%;
+}
+#python-bar::after{
+    width:80%;
+}
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+
+}
+.navbar {
+    background: rgb(45, 44, 44);
+    padding: 15px;
+}
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+ul li a:hover{
+     text-decoration:underline;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    display: inline-block;
+}
+ul li a {
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-right: 25px;
+}
+button {
+    background-color: black;
+    margin-left: 10px; 
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+button a {
+    color: white; 
+    font-weight: bold; 
+    font-size: 15px;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+.content-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.image-gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
